@@ -1,0 +1,229 @@
+
+:root {
+  --md-dark-color: #121212;
+  --dark-color: rgb(0, 0, 0);
+  --light-dark-color: rgb(0, 0, 0);
+  --yellow-color: rgb(245, 197, 24);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--dark-color);
+    padding-left: 3px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--yellow-color);
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(171, 193, 221);
+  }
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--dark-color);
+  
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.wrapper {
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.wrapper .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.search-container {
+  background-color: var(--md-dark-color);
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.logo {
+  padding: 1rem 0;
+  display: flex;
+}
+.logo .nav-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 100%;
+    
+}
+
+.favourites{
+    color: white !important;
+    padding-left: 2rem;
+    font-size: 1rem;
+}
+.favourites :hover{
+    color: var(--yellow-color);
+}
+.favourites i {
+    color: coral;
+}
+
+.logo p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+.logo p span a {
+  color: var(--yellow-color);
+}
+.search-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+.search-element h3 {
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.search-element .form-control {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  outline: none;
+  color: var(--light-dark-color);
+  width: 350px;
+}
+
+.result-container{
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+}
+#result-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    overflow: scroll;
+    height: 80vh;
+}
+
+/* card related css BEGIN */
+.card{
+    max-height: 400px;
+}
+.card img{
+    max-height:100%
+}
+.card-body{
+    background-color: var(--md-dark-color);
+}
+.card-body :hover{
+    background-color: var(--dark-color);
+}
+.card-title{
+    color: var(--yellow-color);
+}
+.card-text{
+    margin-bottom: 0.5rem;
+    
+}
+ 
+
+/* card related css END */
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .logo p {
+    font-size: 1.2rem;
+  }
+  .search-element .form-control {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+  .search-element h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+}
+
+@media (min-width: 800px) {
+  .search-element {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .search-element h3 {
+    margin-bottom: 0;
+  }
+  /* .result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .movie-info {
+    text-align: left;
+    padding-top: 0;
+  }
+  .movie-info .movie-misc-info {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  .movie-info .plot {
+    margin-left: 0;
+  }
+  .movie-info .writer {
+    padding-left: 0;
+    margin-left: 0;
+  } */
+}

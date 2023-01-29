@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/external-bearicons-blue-bearicons/2x/external-movie-call-to-action-bearicons-blue-bearicons.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Search</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- logo -->
+      <nav class="logo">
+        <div class="nav-container">
+          <p>
+            <span><a href="index.html">MovieSearch</a></span>
+          </p>
+          <a href="./index.html"><span class="favourites">Home </i></span></a>
+          <a href="./favourites.html"><span class="favourites">My Favourites <i class="far fa-star"></i></span></a>
+        </div>
+      </nav>
+      <!-- end of logo -->
+      <!-- search container -->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie ..."
+            id="movie-search-box"
+          />
+        </div>
+      </div>
+      <!-- end of search container -->
+
+      <!-- result container -->
+      <div class="result-container">
+        <h3><span class="favourites">Search Result: </span></h3>
+        <div id="result-grid">
+          <div class="card">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNzNlZTZjMDctZjYwNi00NzljLWIwN2QtZWZmYmJiYzQ0MTk2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+                class="img-fluid"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Matrix :revolutions</h5>
+              <p class="card-text">Type: Movie.</p>
+              <p class="card-text">Year: 2012.</p>
+              <div class="d-flex">
+                <label for="" data-movie="abc" hidden>"tt0242653"</label>
+                <a
+                  href="#"
+                  onclick="addToFav(this)"
+                  data-val=""
+                  class="btn btn-primary w-50 m-2"
+                >
+                  Add to fav
+                  <i class="far fa-star"></i>
+                </a>
+                <a
+                  href="/movieDetails.html?id=tt0242653"
+                  class="btn btn-primary w-50 m-2"
+                  >Movie Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of result container -->
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
