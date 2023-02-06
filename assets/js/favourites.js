@@ -50,7 +50,7 @@
                         )}</label>
                             <a onclick="removeFromFav(this)" class="btn btn-primary w-50 m-2">Remove from fav 
                             <i class="far fa-star"></i></a>
-                            <a href="/movieDetails.html?id=${
+                            <a href="./movieDetails.html?id=${
                               movie.imdbID
                             }" class="btn btn-primary w-50 m-2">Movie Details</a>
                         </div>
