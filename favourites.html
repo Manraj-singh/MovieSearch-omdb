@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       rel="stylesheet"
     />
+    <!-- mdbootrap -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
       rel="stylesheet"
@@ -27,7 +28,7 @@
   </head>
   <body onload="loadFavouriteMovies()" >
     <div class="wrapper">
-      <!-- logo -->
+      <!-- navbar-->
       <nav class="logo">
         <div class="nav-container">
           <p><span><a href="index.html">MovieSearch</a></span></p>
@@ -39,52 +40,21 @@
           ></a>
         </div>
       </nav>
-      <!-- end of logo -->
+      <!-- end of navbar -->
       <!-- search container -->
       <div class="search-container">
         <div class="search-element">
           <h3>My Favourites:</h3>
         </div>
       </div>
-      <div id="result-grid">
-        <div class="card">
-          <div
-            class="bg-image hover-overlay ripple"
-            data-mdb-ripple-color="light"
-          >
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNzNlZTZjMDctZjYwNi00NzljLWIwN2QtZWZmYmJiYzQ0MTk2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
-              class="img-fluid"
-            />
-            <a href="#!">
-              <div
-                class="mask"
-                style="background-color: rgba(251, 251, 251, 0.15)"
-              ></div>
-            </a>
-          </div>
-          <div class="card-body bg-dark text-white">
-            <h5 class="card-title">Matrix :revolutions</h5>
-            <p class="card-text">Type: Movie.</p>
-            <p class="card-text">Year: 2012.</p>
-            <div class="d-flex">
-              <label for="" data-movie="abc" hidden>"tt0242653"</label>
-              <a
-                href="#"
-                onclick="addToFav(this)"
-                data-val=""
-                class="btn btn-primary w-50 m-2"
-              >Add to fav <i class="far fa-star"></i></a>
-              <a
-                href="/movieDetails.html?id=tt0242653"
-                class="btn btn-primary w-50 m-2"
-                >Movie Details</a
-              >
-            </div>
-          </div>
-        </div>
+      <!-- end of search container  -->
+      <!-- result container where fav movies will be dispayed  -->
+      <div id="result-grid" class="mt-4 p-3">
+       
       </div>
+      <!-- end of result-container -->
     </div>
-    <script src="./assets/js/favourites.js" ></script>
+    <script src="./assets/js/movieDetail.js"></script>
+    <script src="./assets/js/favourites.js"></script>
   </body>
 </html>
