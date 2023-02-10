@@ -10,7 +10,7 @@ _HTML , CSS , Vanilla JS , Bootstrap_
 
 ## API Reference
 
-```http
+```bash
  API : http://www.omdbapi.com/
 
  usage: http://www.omdbapi.com/?apikey=[yourkey]&i=[movieid]
